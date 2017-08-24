@@ -11,6 +11,8 @@ $ docker run -p 8086:8086 \
       influxdb
 Modify $PWD to the directory where you want to store data associated with the InfluxDB container.
 
+To verify use curl -sl -I $IP:8086/ping if working correctly it'll return a success response with the influxdb version.
+
 You can also have Docker control the volume mountpoint by using a named volume.
 
 $ docker run -p 8086:8086 \
